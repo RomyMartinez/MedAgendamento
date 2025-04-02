@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, input, button, a, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    height: 36px;
+}
+
+.header-right a {
+    text-decoration: none;
+    margin-left: 12px;
+    color: #2b6cb0;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.header-right a:hover {
+    background: rgba(43, 108, 176, 0.1);
+}
+
+/* SOBRE */
+.card-sobre {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-sobre h3 {
+    color: #2b6cb0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-sobre p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.card-sobre strong {
+    color: #1a4d8f;
+}
+
+/* CARD GERAL */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* SEARCH */
+.search-bar {
+    margin: 0 20px 20px 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+/* ICON BUTTONS */
+.icon-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 20px;
+}
+
+.icon-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* CARD - PERTO DE VOCÊ */
+.card-perto {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+/* Scroll */
+.card-perto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card-perto::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+/* Último item com espaçamento extra */
+.card-perto .doutor-item:last-child {
+    padding-bottom: 20px;
+}
+
+/* Título */
+.card-perto h4 {
+    font-size: 1.2rem;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 5px;
+}
+
+/* Doutor item */
+.card-perto .doutor-item {
+    margin-bottom: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Header de doutor */
+.doutor-item .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+/* Avaliação */
+.doutor-item .avaliacao {
+    margin-left: 30px;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+/* FOOTER */
+/* FOOTER FIXO E RESPONSIVO */
+footer {
+    background: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Estilo dos ícones */
+.icon-footer {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.icon-footer:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+

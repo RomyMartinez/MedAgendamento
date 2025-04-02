@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Consultas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="imagens/logo.jpeg" alt="Logo" class="logo">
+            <h1>Entrar no Sistema</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="card-login">
+            <form action="login.php" method="POST">
+                <label for="login">Login</label>
+                <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
